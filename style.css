@@ -1,0 +1,67 @@
+body{
+    background-color: #4b2d00;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('Poppins-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar{
+    display: flex;
+    background-color: #9c5e00;
+    height: 8vw;
+    
+}
+
+.navbar_row{
+    display: flex;
+    justify-content: row;
+    gap: 5vw;
+    margin-left: 25vw;
+}
+
+.navbar_button{
+    display: flex;
+    background-color: #FF9800;
+    
+}
+
+h1{
+    color: white;
+    font-family: 'poppins';
+}
+
+.shell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    background-color: #9c5e00;
+    margin: 5vw auto;
+    padding: 2vw;
+    border-radius: 10px;
+}
+
+
+.answer_row {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    margin-top: 5vw;
+}
+
+.answer {
+    flex: 1;
+    background-color: #FF9800;
+    text-align: center;
+    padding: 1vw;
+    border-radius: 10px;
+    font-size: small;
+}
+
+
