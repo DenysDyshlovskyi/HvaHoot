@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Hvahoot Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <div class="shell">
+        <form method="POST">
+            <div class="question">
+                <h1>{{ quizzes[6][1] }}</h1>
+            </div>
+            <div class="answer_row">
+                <div class="answer" id="answer_tl">
+                    <input type="radio" name="answer" value="{{ quizzes[2][2] }}" id="answer1">
+                    <label for="answer1">{{ quizzes[6][2] }}</label>
+                </div>
+                <div class="answer" id="answer_tr">
+                    <input type="radio" name="answer" value="{{ quizzes[2][3] }}" id="answer2">
+                    <label for="answer2">{{ quizzes[6][3] }}</label>
+                </div>
+            </div>
+            <div class="answer_row">
+                <div class="answer" id="answer_bl">
+                    <input type="radio" name="answer" value="{{ quizzes[2][4] }}" id="answer3">
+                    <label for="answer3">{{ quizzes[6][4] }}</label>
+                </div>
+                <div class="answer" id="answer_br">
+                    <input type="radio" name="answer" value="{{ quizzes[2][5] }}" id="answer4">
+                    <label for="answer4">{{ quizzes[6][5] }}</label>
+                </div>
+            </div>
+        
+            <input type="hidden" name="correct_answer" value="{{ quizzes[2][2] }}">
+            <button type="submit">Submit Answer</button>
+        </form>
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

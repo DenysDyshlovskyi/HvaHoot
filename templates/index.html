@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HvaHoot</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 
 </head>
 <body>
     <div class="navbar">
-        <img src="HvaHoot_logo.png" alt="">
+        <img src="{{ url_for('static', filename='HvaHoot_logo.png') }}" alt="">
         <div class="navbar_row">
             <h1 class="navbar_button">Se resultater</h1>
-            <h1 class="navbar_button">Lag ny quiz</h1>
+            <h1 class="navbar_button"><a href="/quiz">Spill en Quiz</a></h1>
             <h1 class="navbar_button">Logg inn</h1>
         </div>
     </div>
 </body>
 
-<link rel="stylesheet" href="style.css">
 </html>
